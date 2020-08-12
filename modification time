@@ -1,0 +1,9 @@
+vi prog11.sh
+echo "Enter filename : $1"
+file=$1
+if [ ! –f $file ]
+then
+	echo "File does not exist"
+ 	exit 1
+fi
+echo "$file  last modified on $(stat –c %x $file)
