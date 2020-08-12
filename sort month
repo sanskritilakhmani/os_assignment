@@ -1,0 +1,14 @@
+1.You  are given a file of tab-delimited weather data(TSV).There is no header column in this data file.
+The five column in this data are: (a) the name of the city (b) the average monthly temperature in Jan(in Fahrenheit). 
+(c) the average monthly temperature in April(in Fahrenheit).(d) the average monthly temperature in july(in Fahrenheit).
+(e) the average monthly temperature in October(in Fahrenheit).You need to sort this file on the basis of average monthly temperature in April.
+vi a2.tsv
+Mathura	26	25	31	32
+Agra	23	24	30	44
+Delhi	17	12	55	44	
+Mumbai	33	55	11	55
+Aligarh		31	31	41	42
+vi prog 8.sh
+echo "Detail sorted according to april month"
+sort –k 3n a2.tsv
+sh prog8.sh
