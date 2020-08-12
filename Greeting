@@ -1,0 +1,13 @@
+vi prog7.sh
+echo "Enter your name"
+read n
+d =$(date + "%H")
+if[$d –lt 12]
+then
+	echo"Hello $n Good Morning"
+elif[$d –lt 16]
+echo"Hello $n Good evening"
+else
+	echo"Hello $n Good Night"
+fi
+sh prog7.sh
