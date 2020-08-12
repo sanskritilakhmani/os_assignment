@@ -1,0 +1,9 @@
+Vi prog9.sh
+if[ $1 –f ]
+then
+	echo "It is a file"
+elif[ $1 –d ]
+then
+	echo "It is a directory"
+else
+	echo "Anything else"
