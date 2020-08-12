@@ -1,0 +1,13 @@
+vi a.tsv
+Name    Rollno  Age
+Rohit	 10      19
+Adi          12      20
+Janvi       15      18
+Rahul      13      21
+Unnati    16      19
+Richa       13      26
+Sakshi     20      25
+Sameer   24      16
+Sagar       19      28
+Anjali       45      26
+Sed  '1d' a .tsv | cut –d "	" –f 1 | sort
