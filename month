@@ -1,0 +1,15 @@
+1. Write the shell script to take file name as input and if file exists then print the number 
+of lines and also print 10th line of that file.
+vi prog13.sh
+echo "Enter a filename"
+read a
+if [ -f $a]
+then
+        echo "File exist"
+        d=$(wc -l $a)
+        echo "Number of lines are : $d"
+        s=$(sed -n '10p' i1)
+        echo "The 10th line is : $s"
+else
+        echo "File doesnot exist"
+fi
