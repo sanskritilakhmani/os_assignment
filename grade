@@ -1,0 +1,21 @@
+1.Write a shell script to input the marks of a student  in 3 subjects and find his grade.
+vi prog19.sh
+echo "Enter marks in 3 subjects"
+read m1
+read m2
+read m3
+sum=`expr $m1 + $m2 + $m2`
+per=`expr $sum / 3`
+echo $per
+if [ $per -ge 60 ]
+then    
+        echo "First"
+else if [ $per -ge 50 ]
+then
+        echo "Second"
+else if [$per -ge 40 ]
+then    
+        echo "Third"
+else    
+        echo "Fail"
+fi      
