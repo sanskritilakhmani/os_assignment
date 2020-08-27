@@ -1,0 +1,13 @@
+1.Write a shell script that print reverse of a given positive no.
+vi prog20.sh
+rev=0
+sd=0
+read n
+while [ $n -gt 0 ]
+do
+        sd=$(( $n % 10 ))
+        echo $sd
+        rev=`expr $rev \* 10 + $sd`
+        n=$(( $n / 10 ))
+done    
+echo $rev
