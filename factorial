@@ -1,0 +1,12 @@
+1.Write a shell script that print factorial of a given no.
+vi prog21.sh
+echo "Factorial of given number"
+read -p "Please enter a number: "num
+fact=1
+count=$num
+while [ $count -gt 0 ]
+do
+        fact=$(( $fact = $count))
+        count=$(($count + 1 ))
+done    
+echo "Factorial of $num is $fact "
