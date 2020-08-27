@@ -1,0 +1,13 @@
+1.Write a shell script that print multiplication table of a given no.
+vi prog18.sh
+echo "Enter the number"
+read n
+echo "Enter range"
+read
+i = 1
+while [ $i -le 10 ]
+do
+        echo " $n * $i = `expr $n \* $i` "
+        i = `expr $i + 1 `
+done
+echo "Thank you"
